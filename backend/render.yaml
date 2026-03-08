@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: stegoanalyzer-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    rootDir: backend
+    envVars:
+      - key: VIRUSTOTAL_API_KEY
+        sync: false
+      - key: VIRUSTOTAL_UPLOAD_NEW
+        value: "false"
+      - key: SANDBOX_DIR
+        value: "sandbox"
+      - key: UPLOAD_DIR
+        value: "uploads"
+      - key: MAX_FILE_SIZE_MB
+        value: "50"

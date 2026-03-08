@@ -1,0 +1,55 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary meta -->
+    <title>StegoAnalyzer — Advanced Steganalysis Tool</title>
+    <meta
+      name="description"
+      content="Detect hidden payloads and malware concealed inside images
+               using advanced LSB steganalysis techniques."
+    />
+
+    <!-- Prevent search engines indexing the tool (security best practice) -->
+    <meta name="robots" content="noindex, nofollow" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!--
+      Fonts
+      Inter       — clean professional UI font
+      JetBrains Mono — hex values, hashes, file paths
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+      React mounts here.
+      The noscript message shows if JavaScript is disabled.
+    -->
+    <div id="root"></div>
+    <noscript>
+      <div style="
+        padding: 2rem;
+        text-align: center;
+        font-family: sans-serif;
+        color: #0f172a;
+      ">
+        StegoAnalyzer requires JavaScript to run.
+        Please enable JavaScript in your browser.
+      </div>
+    </noscript>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

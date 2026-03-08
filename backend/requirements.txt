@@ -1,0 +1,29 @@
+# requirements.txt
+# Install with: pip install -r requirements.txt
+
+# ── Web framework ─────────────────────────────────────────────────────
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9        # required for file uploads in FastAPI
+
+# ── Image processing ──────────────────────────────────────────────────
+Pillow==10.3.0
+
+# ── Numerical / statistical ───────────────────────────────────────────
+numpy==1.26.4
+scipy==1.13.0
+
+# ── PE / executable analysis ──────────────────────────────────────────
+pefile==2023.2.7
+
+# ── HTTP (VirusTotal API) ─────────────────────────────────────────────
+requests==2.31.0
+
+# ── Data validation (models/) ─────────────────────────────────────────
+pydantic==2.7.1
+
+# ── Async file I/O ────────────────────────────────────────────────────
+aiofiles==23.2.1
+
+# ── Environment variable loading ──────────────────────────────────────
+python-dotenv==1.0.1
