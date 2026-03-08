@@ -14,7 +14,7 @@ import {
 import ThreatMeter                  from "../components/results/ThreatMeter";
 import ModuleGrid                   from "../components/results/ModuleGrid";
 import IndicatorList                from "../components/results/IndicatorList";
-import PayloadInfo                  from "../components/results/Payloadinfo";
+import PayloadInfo                  from "../components/results/PayloadInfo";
 import SandboxPanel                 from "../components/sandbox/SandboxPanel";
 import HistogramChart               from "../components/charts/HistogramChart";
 import EntropyChart                 from "../components/charts/EntropyChart";
