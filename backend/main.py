@@ -80,8 +80,9 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173",               # local dev frontend
-        "https://stegoanalyzer.onrender.com",  # your Render frontend URL (update after deploying frontend)
+        "http://localhost:5173",                    # local dev frontend
+        "https://stegoanalyzer.onrender.com",       # Render frontend (update after deploying)
+        "https://stegoanalyzer-api2.onrender.com",  # Render backend
     ],
     allow_credentials=True,
     allow_methods=["*"],
