@@ -81,7 +81,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",                    # local dev frontend
-        "https://stegoanalyzer.onrender.com",       # Render frontend (update after deploying)
+        "https://stegoanalyzer-frontend.onrender.com",       # Render frontend (update after deploying)
         "https://stegoanalyzer-api2.onrender.com",  # Render backend
     ],
     allow_credentials=True,
